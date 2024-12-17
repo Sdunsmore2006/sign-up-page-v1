@@ -1,0 +1,36 @@
+/* Basic Reset */
+body {
+    background: linear-gradient(#FB00E3, #6b0961)
+
+  }
+  
+  * {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and overall background */
+  body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+  }
+  .clock-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10; /* Ensures the clock is above the animation */
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+}
+
+#clock {
+    font-size: 10em;
+    font-weight: bold;
+    color: #ffffff;
+}

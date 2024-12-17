@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <span id="clock"></span>
+    </div>
+    <script src="script.js"></script>
+
+  <canvas id="canvas" width="625" height="550"></canvas>
+
+  <script src="https://unpkg.com/@rive-app/canvas@2.20.0"></script>
+  <script>
+    // Rive animation code (no changes needed here)
+    const r = new rive.Rive({
+      src: "anime_girl5.riv",
+      canvas: document.getElementById("canvas"),
+      autoplay: true,
+      stateMachines: "State Machine 1",
+      onLoad: () => {
+        r.resizeDrawingSurfaceToCanvas();
+      },
+    });
+
+   
+  </script>
+</body>
+</html>
